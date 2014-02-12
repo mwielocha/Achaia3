@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# application
+GET     /                                             controllers.DefaultController.index
+
+# GET     /assets/*file                               controllers.Assets.at(path="/public", file)
+
+
+
+
+
+
+
+
+
+
