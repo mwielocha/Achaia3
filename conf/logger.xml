@@ -14,9 +14,6 @@
 
     <logger name="javax.management" level="WARN" />
     <logger name="me.prettyprint.cassandra" level="WARN" />
-    <logger name="org.springframework.amqp" level="INFO" />
-    <logger name="org.springframework" level="INFO" />
-    <logger name="org.springframework.integration" level="INFO" />
     <logger name="com.netflix.astyanax" level="TRACE" />
 
     <logger name="akka.event.slf4j.Slf4jLogger" level="DEBUG" additivity="false">
@@ -24,9 +21,7 @@
     </logger>
 
     <logger name="play" level="TRACE" />
-    <logger name="repository" level="TRACE" />
     <logger name="service" level="TRACE" />
-    <logger name="view" level="TRACE" />
     <logger name="controller" level="WARN" />
 
     <root level="INFO">

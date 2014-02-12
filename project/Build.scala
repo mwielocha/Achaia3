@@ -24,6 +24,7 @@ object Achaia3Build extends Build {
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
+    routesImport        ++= Seq("extensions.Binders._", "com.eaio.uuid.UUID"),
     scalaVersion        := "2.10.3",
     scalacOptions       := Seq("-unchecked", "-deprecation", "-feature", "-language:implicitConversions", "-language:postfixOps"),
     scalacOptions in Test ++= Seq("-Yrangepos"),
