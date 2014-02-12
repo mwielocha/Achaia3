@@ -1,3 +1,5 @@
+package app
+
 import commons.logging.Logging
 import play.api.{Application, GlobalSettings}
 

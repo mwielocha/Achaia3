@@ -2,7 +2,7 @@ package extensions
 
 import play.api.mvc._
 import com.eaio.uuid.UUID
-import landscape.common.UUIDHelper
+import commons.UUIDHelper
 import play.api.mvc.PathBindable.Parsing
 
 /**
@@ -13,7 +13,7 @@ import play.api.mvc.PathBindable.Parsing
 
 object Binders {
 
-  import landscape.common.UUIDImplicits._
+  import commons.UUIDImplicits._
 
   implicit def queryStringBindableUUID: QueryStringBindable[UUID] = {
     play.api.mvc.QueryStringBindable.bindableUUID.transform(x => x, x => x)
