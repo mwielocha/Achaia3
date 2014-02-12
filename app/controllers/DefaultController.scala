@@ -8,6 +8,6 @@ import play.api.mvc.{Action, Controller}
 object DefaultController extends Controller {
 
   def index = Action {
-    Ok("good")
+    Ok(views.html.Default.index())
   }
 }
