@@ -3,9 +3,11 @@
 # ~~~~
 
 # application
-GET     /                           controllers.DefaultController.index
+GET     /                                   controllers.DefaultController.index
 
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /connection/:connection/schema      controllers.SchemaController.getSchema(connection: String)
+
+GET     /assets/*file                       controllers.Assets.at(path="/public", file)
 
 
 
